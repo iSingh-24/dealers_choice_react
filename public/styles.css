@@ -1,0 +1,44 @@
+body{
+    /* background-image: url("https://media2.giphy.com/media/8mmWZD1Xg0x4CpcNBp/source.gif");
+    background-size: cover; */
+    background-color: lightblue;
+    text-align: center;
+}
+
+.form{
+    color:purple;
+    font-size: 30px; 
+}
+
+h1{
+    color:green;
+    background-color: orange;
+    border: solid 2px; 
+}
+
+li{
+    font-size: 20px;
+    list-style-type: none;
+    font-family:cursive;
+    font-weight: bold;
+}
+
+h2{
+    display: inline-block;
+    font-family: Arial; 
+    font-style:italic;
+  
+}
+
+.title{
+    color: white;
+    background-color: black;
+}
+
+button{
+    font-size: 15px;
+}
+
+select{
+    font-size: 20px;
+}

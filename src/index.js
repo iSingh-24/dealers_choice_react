@@ -52,7 +52,9 @@ class App extends Component {
       houses: (await axios.get("/api/houses")).data,
     });
 
-    window.alert(`${singleCharacter.name} has been declared dead!`);
+    window.alert(
+      `${singleCharacter.name} has been declared dead. Tom Riddle sends his regards!`
+    );
   }
 
   async submitHandler(event) {

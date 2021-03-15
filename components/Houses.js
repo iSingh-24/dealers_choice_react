@@ -3,7 +3,9 @@ import React from "react";
 const Houses = ({ houses, deleteHandler }) => {
   return (
     <div>
-      <h1>These Are The Houses With Their Respective Students</h1>
+      <h1 className="title">
+        These Are The Houses With Their Respective Students
+      </h1>
       {houses.map((house, id) => {
         return (
           <div key={id}>
@@ -14,7 +16,7 @@ const Houses = ({ houses, deleteHandler }) => {
                 <li key={id}>
                   {`${character.name} `}
                   <button onClick={deleteHandler} value={character.id}>
-                    obliterate
+                    expell
                   </button>
                 </li>
               ))}

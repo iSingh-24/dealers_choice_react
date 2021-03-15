@@ -8,7 +8,7 @@ const Form = ({
   changeHouseId,
 }) => {
   return (
-    <form onSubmit={submitHandler}>
+    <form onSubmit={submitHandler} className="form">
       <div>
         <label>Which House Do You Want To Join? </label>
         <select value={houseId} onChange={changeHouseId}>
@@ -24,7 +24,7 @@ const Form = ({
       </div>
       <br></br>
       <div>
-        <label>Names Of Student </label>
+        <label>Name Of Student </label>
         <input type="text" onChange={changeHandler}></input>
       </div>
       <br></br>
