@@ -1,14 +1,21 @@
 import React from "react";
 
-const Form = ({ houses }) => {
+const Form = ({
+  houses,
+  changeHandler,
+  submitHandler,
+  houseId,
+  changeHouseId,
+}) => {
   return (
-    <form>
+    <form onSubmit={submitHandler}>
       <div>
         <label>Which House Do You Want To Join? </label>
-        <select>
+        <select value={houseId} onChange={changeHouseId}>
+          <option value="">Please Select A House</option>
           {houses.map((house, id) => {
             return (
-              <option value={house.name.toLowerCase()} key={id}>
+              <option value={house.id} key={id}>
                 {house.name}
               </option>
             );
@@ -18,7 +25,7 @@ const Form = ({ houses }) => {
       <br></br>
       <div>
         <label>Names Of Student </label>
-        <input type="text"></input>
+        <input type="text" onChange={changeHandler}></input>
       </div>
       <br></br>
       <button type="submit">Submit</button>

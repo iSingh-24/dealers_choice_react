@@ -1,6 +1,6 @@
 import React from "react";
 
-const Houses = ({ houses }) => {
+const Houses = ({ houses, deleteHandler }) => {
   return (
     <div>
       <h1>These Are The Houses With Their Respective Students</h1>
@@ -12,8 +12,10 @@ const Houses = ({ houses }) => {
             <ul>
               {house.characters.map((character, id) => (
                 <li key={id}>
-                  {character.name}
-                  <button>x</button>
+                  {`${character.name} `}
+                  <button onClick={deleteHandler} value={character.id}>
+                    obliterate
+                  </button>
                 </li>
               ))}
             </ul>
