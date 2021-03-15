@@ -4,8 +4,6 @@ import axios from "axios";
 import Form from "../components/Form";
 import Houses from "../components/Houses";
 
-//Default houseId added for now.
-
 class App extends Component {
   constructor() {
     super();
