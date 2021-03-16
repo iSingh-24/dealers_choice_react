@@ -45,7 +45,6 @@ app.get("/api/houses", async (req, res, next) => {
 
 app.post("/api/characters", async (req, res, next) => {
   try {
-    console.log(req.body);
     const newCharacter = await Character.create(req.body);
     res.send(newCharacter);
   } catch (ex) {
